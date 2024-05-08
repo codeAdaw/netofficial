@@ -96,7 +96,7 @@ export default function Home() {
                             </div>
                         <Image className='mt-8 w-full'  src='/images/part3img2.png' alt=""/>
                     </div>
-                    <Image className="absolute right-0 top-96 z-0"  src='/images/rightimg.png' style={{zIndex: -1}} height="820" alt=""/>
+                    <Image className="absolute right-0 top-96 z-0"  src='/images/rightimg.png' style={{zIndex: -1}} height="620" alt=""/>
                 </div>
                  <div className="mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
                     <div className='lg:h-4/5 sm:h-80 lg:absolute sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
