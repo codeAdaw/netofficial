@@ -1,6 +1,6 @@
 // 切换语言组件
 "use client";
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import intl from 'react-intl-universal';
 import { Button, Dropdown } from 'antd';
 const items = [
