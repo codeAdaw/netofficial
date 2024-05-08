@@ -44,7 +44,7 @@ export default function SwitchLocal(props:any) {
       else {
          const obj = {
            'en-US': 'EN',
-           'zh-CH': '简',
+           'zh-CH':, '简',
            'zh-TW': '蘩',
          }
          setLan(obj(surl.split('=')[1]))

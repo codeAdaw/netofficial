@@ -41,10 +41,10 @@ export default function SwitchLocal(props:any) {
          window.history.pushState({}, '', `?language=en-US`);
          window.location.reload()
       }
-      else {
+      else{
          const obj = {
            'en-US': 'EN',
-           'zh-CH': '简',
+           'zh-CH':, '简',
            'zh-TW': '蘩',
          }
          setLan(obj(surl.split('=')[1]))
