@@ -42,7 +42,7 @@ export default function Home() {
             <div className="mx-auto w-full lg:h-screen sm:h-banner bg-cover relative">
                 <Spline className="h-full w-full"  scene="https://prod.spline.design/HgOIH-tqLnthZoKa/scene.splinecode" />
                 <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:top-96 lg:top-0 bottom-0 left-0 right-0">
-                    <h1 ref={typedel} id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 font-extrabold text-write-900"></h1>
+                    <h1 ref={typedel} id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 font-extrabold text-write-900">qqqqq</h1>
                     <p className="mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>
                 </div>
             </div>
