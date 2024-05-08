@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             {/* part 1 */}
                 <div className="mx-auto w-full lg:h-screen sm:h-auto bg-cover flex lg:flex-row sm:flex-col-reverse sm:text-center items-center lg:px-28 sm:px-mspace relative">
-                    <Image className="absolute left-0 top-96 lg:w-120"  src='/images/bgleft.png'  alt=""/>
+                    <Image className="absolute left-0 top-96"  src='/images/bgleft.png' style={{zIndex: -1}} height="620" alt=""/>
                     <div className="z-9 lg:basis-3/5 lax lax_preset_fadeIn:50:100 lax_preset_spin">
                         <h2 className='lg:text-4xl sm:text-2xl mb-10 '>{intl.get("PART1H1")}</h2>
                         <p className='text-justify'>{intl.get("PART1TEXT")}</p>
