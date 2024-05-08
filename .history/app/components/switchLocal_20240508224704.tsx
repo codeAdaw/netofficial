@@ -40,14 +40,6 @@ export default function SwitchLocal(props:any) {
       if(surl == ""){
          window.history.pushState({}, '', `?language=en-US`);
          window.location.reload()
-      }else{
-         // '?language=en-US'
-         const obj = {
-           'en-US': 'EN',
-           'zh-CH':, '简'
-           'zh-TW':'蘩'
-         }
-         setLan(obj(surl.split('=')[1]))
       }
   },[])
   return (

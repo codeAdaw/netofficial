@@ -47,7 +47,6 @@ export default function SwitchLocal(props:any) {
            'zh-CH':, '简'
            'zh-TW':'蘩'
          }
-         setLan(obj(surl.split('=')[1]))
       }
   },[])
   return (

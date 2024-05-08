@@ -1,6 +1,6 @@
 // 切换语言组件
 "use client";
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import intl from 'react-intl-universal';
 import { Button, Dropdown } from 'antd';
 const items = [
@@ -35,21 +35,6 @@ export default function SwitchLocal(props:any) {
     const obj = ['EN','简','蘩']
     setLan(obj[key-1])
   }
-  useEffect(()=>{
-      const surl = window.location.search;
-      if(surl == ""){
-         window.history.pushState({}, '', `?language=en-US`);
-         window.location.reload()
-      }else{
-         // '?language=en-US'
-         const obj = {
-           'en-US': 'EN',
-           'zh-CH':, '简'
-           'zh-TW':'蘩'
-         }
-         setLan(obj(surl.split('=')[1]))
-      }
-  },[])
   return (
     <Dropdown menu={{ items,onClick }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
        <a onClick={(e) => e.preventDefault()}>
