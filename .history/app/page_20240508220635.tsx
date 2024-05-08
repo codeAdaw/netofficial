@@ -48,33 +48,33 @@ export default function Home() {
             </div>
             {/* part 1 */}
                 <div className="mx-auto w-full lg:h-screen sm:h-auto bg-cover flex lg:flex-row sm:flex-col-reverse sm:text-center items-center lg:px-28 sm:px-mspace relative">
-                    <Image className="absolute left-0 top-96 z-0"  src='/images/bgleft.png' alt=""/>
+                    <Image className="absolute left-0 top-96 z-0"  src='/images/bgleft.png' alt="" fill/>/>
                     <div className="z-9 lg:basis-3/5 lax lax_preset_fadeIn:50:100 lax_preset_spin">
                         <h2 className='lg:text-4xl sm:text-2xl mb-10 '>{intl.get("PART1H1")}</h2>
                         <p className='text-justify'>{intl.get("PART1TEXT")}</p>
                     </div>
                     <div className="lg:w-120 lg:basis-2/5">
-                        <Image  src='/images/part2img.png' alt=""/>
+                        <Image  src='/images/part2img.png' alt="" fill/>/>
                     </div>
                 </div>
             {/* part 2 */}
                 <div className="mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace z-9'>
                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
-                        <Image className='mb-8 w-full' src='/images/part3img1.png' alt=""/>
+                        <Image className='mb-8 w-full' src='/images/part3img1.png' alt="" fill/>/>
                             <div className="flex lg:flex-row  sm:flex-col gap-8 z-9">
                                 <p>
                                     <h3 className='mb-4'>{intl.get('PART2H2')}</h3>
                                     {intl.get('PART2TEXT1')}
                                     <ul className='flex justify-around mt-12'>
                                         <li>
-                                            <Image className='w-8' src='/images/icon1.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon1.png' alt="" fill/>/>
                                         </li>
                                         <li>
-                                            <Image className='w-8' src='/images/icon2.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon2.png' alt="" fill/>/>
                                         </li>
                                         <li>
-                                            <Image className='w-8' src='/images/icon3.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon3.png' alt="" fill/>/>
                                         </li>
                                     </ul>
                                 </p>
@@ -83,39 +83,39 @@ export default function Home() {
                                     {intl.get('PART2TEXT2')}
                                     <ul className='flex justify-around mt-12'>
                                         <li>
-                                            <Image className='w-8' src='/images/icon4.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon4.png' alt="" fill/>/>
                                         </li>
                                         <li>
-                                            <Image className='w-8' src='/images/icon5.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon5.png' alt="" fill/>/>
                                         </li>
                                         <li>
-                                            <Image className='w-8' src='/images/icon6.png' alt=""/>
+                                            <Image className='w-8' src='/images/icon6.png' alt="" fill/>/>
                                         </li>
                                     </ul>
                                 </p>
                             </div>
-                        <Image className='mt-8 w-full'  src='/images/part3img2.png' alt=""/>
+                        <Image className='mt-8 w-full'  src='/images/part3img2.png' alt="" fill/>/>
                     </div>
-                    <Image className="absolute right-0 top-96 z-0"  src='/images/rightimg.png' alt=""/>
+                    <Image className="absolute right-0 top-96 z-0"  src='/images/rightimg.png' alt="" fill/>/>
                 </div>
                  <div className="mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
                     <div className='lg:h-4/5 sm:h-80 lg:absolute sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
                         <h2 className='lg:text-4xl lg:mb-12 sm:text-2xl text-center'>{intl.get('PART3H1')}</h2>
-                        <Image className='mx-auto' src='/images/part4img.png' alt="" fill/>
+                        <Image className='mx-auto' src='/images/part4img.png' alt="" fill/>/>
                         <p className='text-center'>{intl.get('PART3TEXT')}</p>
                     </div>
                 </div>
                 <div className="mx-auto w-full lg:h-screen sm:h-hpart4  bg-cover relative">
-                    <Image className="absolute top-0 left-0 right-0 m-auto" style={{width: '35rem'}} src="/images/part5_2img.png" alt=""/>
+                    <Image className="absolute top-0 left-0 right-0 m-auto" style={{width: '35rem'}} src="/images/part5_2img.png" alt="" fill/>
                     <div className='h-4/5 absolute top-0 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace'>
-                        <Image className="mx-auto mb-10 lg:mt-24 lg:w-96" src='/images/part5img.png' alt=""/>
+                        <Image className="mx-auto mb-10 lg:mt-24 lg:w-56" src='/images/part5img.png' alt="" fill/>/>
                         <h2 className='lg:text-4xl mb-10 text-center'>{intl.get('PART4H1')}</h2>
                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
                     </div>
                 </div>
                 <div className="mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative">
                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace'>
-                        <Image className='sm:w-48 lg:w-96' src='/images/part6img.png' alt=""/>
+                        <Image className='sm:w-48 lg:w-96' src='/images/part6img.png' alt="" fill/>/>
                         <div className='lg:w-120'>
                             <h3 className='lg:text-3xl sm:2xl mb-2.5'>{intl.get('PART5H1')}</h3>
                             <p className="text-base text-justify mb-8">{intl.get('PART5TEXT1')}</p>

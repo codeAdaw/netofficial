@@ -101,7 +101,7 @@ export default function Home() {
                  <div className="mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
                     <div className='lg:h-4/5 sm:h-80 lg:absolute sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
                         <h2 className='lg:text-4xl lg:mb-12 sm:text-2xl text-center'>{intl.get('PART3H1')}</h2>
-                        <Image className='mx-auto' src='/images/part4img.png' alt="" fill/>
+                        <Image className='mx-auto' src='/images/part4img.png' alt=""/>
                         <p className='text-center'>{intl.get('PART3TEXT')}</p>
                     </div>
                 </div>

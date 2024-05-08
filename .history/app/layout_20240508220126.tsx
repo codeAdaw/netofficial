@@ -27,7 +27,7 @@ export default function RootLayout({
                   <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                       <div className="flex lg:flex mr-24">
                           <a href="#" className="-m-1.5 p-1.5">
-                              <Image className="h-8 w-auto" src="/logo.png"  alt="" fill/>
+                              <Image className="h-8 w-auto" src="/logo.png" width="100" height="50" alt=""/>
                           </a>
                       </div>
                       <div className="hidden lg:flex lg:gap-x-8">
