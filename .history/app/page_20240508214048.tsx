@@ -94,7 +94,7 @@ export default function Home() {
                                     </ul>
                                 </p>
                             </div>
-                        <Image className='mt-8 w-full'  src='/images/part3img2.png' alt=""/>
+                        <Image className='mt-8'  src='/images/part3img2.png' alt=""/>
                     </div>
                     <Image className="absolute right-0 top-96 z-0"  src='/images/rightimg.png' alt=""/>
                 </div>
