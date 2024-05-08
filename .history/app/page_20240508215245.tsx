@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="mx-auto w-full lg:h-screen sm:h-hpart4  bg-cover relative">
                     <Image className="absolute top-0 left-0 right-0 m-auto" style={{width: '35rem'}} src="/images/part5_2img.png" alt=""/>
                     <div className='h-4/5 absolute top-0 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace'>
-                        <Image className="mx-auto mb-10 lg:mt-24 lg:w-56" src='/images/part5img.png' alt=""/>
+                        <Image className="mx-auto mb-10 lg:mt-24" src='/images/part5img.png' alt=""/>
                         <h2 className='lg:text-4xl mb-10 text-center'>{intl.get('PART4H1')}</h2>
                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
                     </div>
