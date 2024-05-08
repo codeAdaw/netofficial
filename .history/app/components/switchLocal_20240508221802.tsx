@@ -30,16 +30,13 @@ const items = [
   },
 ];
 export default function SwitchLocal(props:any) {
-  const [lan, setLan] = useState('EN');
-  const onClick = ({key})=>{
-    const obj = ['EN','简','蘩']
-    setLan(obj[key])
-  }
+  const []
+  const handleSelect = (value:any) => {
+    props.onchange(value)
+  };
   return (
-    <Dropdown menu={{ items,onClick }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
-       <a onClick={(e) => e.preventDefault()}>
-            <Button>{lan}</Button>
-        </a>
+    <Dropdown menu={{ items }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
+        <Button>{}</Button>
     </Dropdown>
   );
 }

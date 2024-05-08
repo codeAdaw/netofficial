@@ -1,8 +1,15 @@
 // 切换语言组件
-"use client";
-import {useState},React from 'react';
+import React from 'react';
 import intl from 'react-intl-universal';
+// import type { MenuProps } from 'antd';
 import { Button, Dropdown } from 'antd';
+//import { useIntl } from 'react-intl';
+// const { Option } = Select;
+// const locales = {
+//   "en-US": require('@/locales/en-US.json'),
+//   "zh-CH": require('@/locales/zh-CN.json'),
+//   "zh-TW": require('@/locales/zh-TW.json'),
+// };
 const items = [
   {
     key: '1',
@@ -30,16 +37,14 @@ const items = [
   },
 ];
 export default function SwitchLocal(props:any) {
-  const [lan, setLan] = useState('EN');
-  const onClick = ({key})=>{
-    const obj = ['EN','简','蘩']
-    setLan(obj[key])
-  }
+  //const intl = useIntl();
+  const handleSelect = (value:any) => {
+    props.onchange(value)
+    console.log('--handleSelect---',value);
+  };
   return (
-    <Dropdown menu={{ items,onClick }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
-       <a onClick={(e) => e.preventDefault()}>
-            <Button>{lan}</Button>
-        </a>
+    <Dropdown menu={{ items }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
+        <Button>EN</Button>
     </Dropdown>
   );
 }
