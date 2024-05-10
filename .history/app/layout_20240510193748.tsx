@@ -3,16 +3,20 @@ import React from 'react';
 // import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-// import { useRouter } from 'next/router';
 import "./globals.css";
 import SwitchLocal  from "./components/switchLocal";
 const inter = Inter({ subsets: ["latin"] });
+// export const metadata: Metadata = {
+//   title: "NETREEL",
+//   description: "NETREEL",
+// };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const path = '1'
+  const path = window.location.pathname;
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -23,6 +27,10 @@ export default function RootLayout({
                             <Image className="h-5 w-auto" src="/logo.png"  alt="" fill/>
                       </div>
                       <div className="lg:flex lg:gap-x-8">
+                        {
+                          // <a href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">Home</a>
+                          // <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">White Paper</a>
+                        }
                           <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">首页</a>
                          <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">白皮书</a>
                       </div>

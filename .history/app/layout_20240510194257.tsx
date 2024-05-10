@@ -3,7 +3,7 @@ import React from 'react';
 // import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import "./globals.css";
 import SwitchLocal  from "./components/switchLocal";
 const inter = Inter({ subsets: ["latin"] });
@@ -12,7 +12,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const path = '1'
+  const path = router.pathname;
   return (
     <html lang="en">
       <body className={inter.className}>

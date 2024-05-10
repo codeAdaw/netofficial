@@ -12,7 +12,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const path = '1'
   return (
     <html lang="en">
       <body className={inter.className}>

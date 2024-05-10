@@ -3,16 +3,20 @@ import React from 'react';
 // import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-// import { useRouter } from 'next/router';
 import "./globals.css";
 import SwitchLocal  from "./components/switchLocal";
 const inter = Inter({ subsets: ["latin"] });
+// export const metadata: Metadata = {
+//   title: "NETREEL",
+//   description: "NETREEL",
+// };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const path = '1'
+  const path = window.location.pathname;
   return (
     <html lang="en">
       <body className={inter.className}>
