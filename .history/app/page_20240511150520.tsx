@@ -175,7 +175,7 @@ export default function Home() {
                                     <img className="absolute right-0 top-96 z-0 lg:w-120 z-0"  src='/images/rightimg.png'  alt=""/>
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
-                                    <div className='lg:h-4/5 sm:h-80 lg:relative sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
+                                    <div className='lg:h-4/5 sm:h-80 lg:absolute sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
                                         <h2 className='lg:text-4xl lg:mb-12 sm:text-2xl text-center font-medium'>{intl.get('PART3H1')}</h2>
                                             <img className='mx-auto lg:w-4/5 h-auto realtive'  src='/type3 3.png' alt=""/>
                                         <p className='text-center text-base lg:mt-5'>{intl.get('PART3TEXT')}</p>
