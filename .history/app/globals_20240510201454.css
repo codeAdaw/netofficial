@@ -51,9 +51,3 @@ body {
   -1px 0 blue,
   -1px -1px blue
 }
-.section{
-  background-color:'#100F22';
-}
-.fp-warning, .fp-watermark {
-  display: none !important;
-}

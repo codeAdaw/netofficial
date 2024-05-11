@@ -54,6 +54,3 @@ body {
 .section{
   background-color:'#100F22';
 }
-.fp-warning, .fp-watermark {
-  display: none !important;
-}
