@@ -79,9 +79,7 @@ export default function Home() {
                 <ReactFullpage
                     //fullpage options
                     licenseKey = {'YOUR_KEY_HERE'}
-                    credits = {{
-                        enabled:false,
-                      }}
+                    credits = {false}
                     scrollingSpeed = {1200}
                     onLeave={(origin, destination, direction) => {
                         const bannerWrap:any = document.getElementById('bannerWrap');
