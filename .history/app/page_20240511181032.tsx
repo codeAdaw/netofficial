@@ -201,7 +201,7 @@ export default function Home() {
                                             <p className="text-base text-justify">{intl.get('PART5TEXT2')}</p>
                                         </div>
                                     </div>
-                                    <div className="absolute lg:bottom-12 sm:bottom-4 sm:mb-4 text-center lg:text-3xl sm:text-2xl mx-auto font-blod leading-10 lg:px-28 3xl:w-3/4 3xl:mx-auto left-0 right-0 sm:px-mspace'">
+                                    <div className="absolute lg:bottom-12 sm:bottom-4 sm:mb-4 text-center lg:text-3xl sm:text-2xl mx-auto font-blod leading-10 lg:px-28 3xl:w-3/4 3xl:mx-0 sm:px-mspace'">
                                         {intl.get('ENDING')}
                                     </div>
                                 </div>

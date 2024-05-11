@@ -126,7 +126,7 @@ export default function Home() {
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace z-9 3xl:w-3/4 3xl:relative' >
+                                    <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace z-9 3xl:w-3/4'>
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         <div className='mb-8 w-full h-5 relative'>
                                             <Image src='/images/part3img1.png' alt="" fill/>
@@ -175,7 +175,7 @@ export default function Home() {
                                     <img className="absolute right-0 top-96 z-0 lg:w-120 z-0"  src='/images/rightimg.png'  alt=""/>
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
-                                    <div className='lg:h-4/5 sm:h-80 lg:relative sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces 3xl:w-3/4'>
+                                    <div className='lg:h-4/5 sm:h-80 lg:relative sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces'>
                                         <h2 className='lg:text-4xl lg:mb-12 sm:text-2xl text-center font-medium'>{intl.get('PART3H1')}</h2>
                                             <img className='mx-auto lg:w-4/5 h-auto realtive'  src='/type3 3.png' alt=""/>
                                         <p className='text-center text-base lg:mt-5'>{intl.get('PART3TEXT')}</p>
@@ -183,14 +183,14 @@ export default function Home() {
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
-                                    <div className='absolute top-0 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace 3xl:w-3/4 3xl:relative' >
+                                    <div className='absolute top-0 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace'>
                                         <img className="mx-auto mb-10 lg:mt-24 lg:w-60"  src='/images/part5img.png' alt=""/>
                                         <h2 className='lg:text-4xl font-medium mb-10 text-center border-solid border-b border-white lg:leading-maxx'>{intl.get('PART4H1')}</h2>
                                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
                                     </div>
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative">
-                                    <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
+                                    <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
                                         <img className='sm:w-48 lg:w-96 h-auto'  src='/images/part6img.png'  alt=""/>
                                         {/* </div> */}
@@ -201,7 +201,7 @@ export default function Home() {
                                             <p className="text-base text-justify">{intl.get('PART5TEXT2')}</p>
                                         </div>
                                     </div>
-                                    <div className="absolute lg:bottom-12 sm:bottom-4 sm:mb-4 text-center lg:text-3xl sm:text-2xl mx-auto font-blod leading-10 lg:px-28 3xl:w-3/4 3xl:mx-auto left-0 right-0 sm:px-mspace'">
+                                    <div className="absolute lg:bottom-12 sm:bottom-4 sm:mb-4 text-center lg:text-3xl sm:text-2xl font-blod leading-10 lg:px-28 sm:px-mspace'">
                                         {intl.get('ENDING')}
                                     </div>
                                 </div>

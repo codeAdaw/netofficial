@@ -57,7 +57,7 @@ body {
 .fp-warning, .fp-watermark {
   display: none !important;
 }
-/* .fp-overflow {
-  max-width: 80rem;
+.fp-overflow {
+  max-width: 75rem;
   margin: auto;
-} */
+}
