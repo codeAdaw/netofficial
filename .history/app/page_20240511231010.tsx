@@ -15,18 +15,13 @@ const locales = {
   };
 export default function Home() {
    const [initDone, setInitDone] = useState(false);
-   const [typef,setTypef] = useState(false);
    const typedel = React.useRef(null);
    useLayoutEffect(()=>{
         console.log('--typedel--',typedel)
         if(!initDone){return};
         const typed = new Typed('#tttt',{
             strings: ["NETREEL.AI"],
-            typeSpeed:100,
-            onComplete: (self) => {
-                // 打完字
-                setTypef(true);
-            },
+            typeSpeed:100
         })
     },[initDone]);
     useEffect(() => {
@@ -61,7 +56,7 @@ export default function Home() {
                                         {/* </Suspense> */}
                                         <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:top-96 lg:top-0 bottom-0 left-0 right-0">
                                             <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900"></h1>
-                                            {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>}
+                                            <p className="mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>
                                         </div>
                                 </div>
                             {/* part 1 */}
@@ -73,15 +68,15 @@ export default function Home() {
                                             <p className='text-justify leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 lg:basis-2/5 bg-s2bg bg-100%">
-                                            <Suspense>
+                                            {/* <Suspense> */}
                                                 <Spline className="w-full h-full"  scene="https://prod.spline.design/PznbIkisUmcBequi/scene.splinecode" />
-                                            </Suspense>
+                                            {/* </Suspense> */}
                                         </div>
                                     </div>
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
+                                    <img className="absolute left-0 top-0 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative' >
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         <div className='mb-8 w-full h-5 relative'>
@@ -93,7 +88,7 @@ export default function Home() {
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
-                                                    <ul className='flex justify-around mt-12 mb-6'>
+                                                    <ul className='flex justify-around mt-12 mb-3.5'>
                                                             <li className='w-12 h-12 relative'>
                                                                 <Image  src='/images/icon1.png' alt="" fill/>
                                                             </li>
@@ -110,7 +105,7 @@ export default function Home() {
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
-                                                    <ul className='flex justify-around mt-12 z-1 mb-5'>
+                                                    <ul className='flex justify-around mt-12 z-1 mb-3.5'>
                                                         <li className='w-12 h-12 relative'>
                                                             <Image  src='/images/icon4.png' alt="" fill/>
                                                         </li>

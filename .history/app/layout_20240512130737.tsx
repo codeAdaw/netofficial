@@ -28,9 +28,7 @@ export default function RootLayout({
       intl.init({
           currentLocale: intl.determineLocale({urlLocaleKey: "language", cookieLocaleKey: "language"}),
           locales,
-      }).then(() => {
-          setInitDone(true);
-      });
+      })
       intl.determineLocale({
           urlLocaleKey: "language",
           cookieLocaleKey: "language"
@@ -47,13 +45,8 @@ export default function RootLayout({
                             <Image className="h-5 w-auto" src="/logo.png"  alt="" fill/>
                       </div>
                       <div className="lg:flex lg:gap-x-8">
-                        {
-                          initDone && <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
-                        } 
-                        {
-                          initDone &&      
-                         <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
-                         }
+                          <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
+                         <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">白皮书</a>
                       </div>
                       <div className="flex">
                           <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

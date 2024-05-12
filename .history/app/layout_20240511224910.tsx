@@ -1,5 +1,13 @@
+/*
+ * @Author: codeAdaw 18810539364@sina.cn
+ * @Date: 2024-05-08 18:54:48
+ * @LastEditors: codeAdaw 18810539364@sina.cn
+ * @LastEditTime: 2024-05-11 22:49:10
+ * @FilePath: /netofficial/app/layout.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 "use client";
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 // import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -18,24 +26,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [initDone, setInitDone] = useState(false);
   let path = '';
   if (typeof window !== 'undefined') {
     // 在浏览器环境下执行的代码
     path = window.location.pathname;
   }
-    useEffect(() => {
-      intl.init({
-          currentLocale: intl.determineLocale({urlLocaleKey: "language", cookieLocaleKey: "language"}),
-          locales,
-      }).then(() => {
-          setInitDone(true);
-      });
-      intl.determineLocale({
-          urlLocaleKey: "language",
-          cookieLocaleKey: "language"
-      });
-  }, []);
   
   return (
     <html lang="en">
@@ -47,13 +42,8 @@ export default function RootLayout({
                             <Image className="h-5 w-auto" src="/logo.png"  alt="" fill/>
                       </div>
                       <div className="lg:flex lg:gap-x-8">
-                        {
-                          initDone && <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
-                        } 
-                        {
-                          initDone &&      
-                         <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
-                         }
+                          <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">首页</a>
+                         <a href="/pefPage" className="text-sm font-semibold leading-6 text-wright">白皮书</a>
                       </div>
                       <div className="flex">
                           <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

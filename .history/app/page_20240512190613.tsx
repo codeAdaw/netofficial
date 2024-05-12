@@ -73,9 +73,9 @@ export default function Home() {
                                             <p className='text-justify leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 lg:basis-2/5 bg-s2bg bg-100%">
-                                            <Suspense>
+                                            {/* <Suspense> */}
                                                 <Spline className="w-full h-full"  scene="https://prod.spline.design/PznbIkisUmcBequi/scene.splinecode" />
-                                            </Suspense>
+                                            {/* </Suspense> */}
                                         </div>
                                     </div>
                                 </div>

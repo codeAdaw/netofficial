@@ -61,7 +61,7 @@ export default function Home() {
                                         {/* </Suspense> */}
                                         <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:top-96 lg:top-0 bottom-0 left-0 right-0">
                                             <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900"></h1>
-                                            {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>}
+                                            {typef && <p className="animate__animated animate__bounceIn mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>}
                                         </div>
                                 </div>
                             {/* part 1 */}
@@ -73,9 +73,9 @@ export default function Home() {
                                             <p className='text-justify leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 lg:basis-2/5 bg-s2bg bg-100%">
-                                            <Suspense>
+                                            {/* <Suspense> */}
                                                 <Spline className="w-full h-full"  scene="https://prod.spline.design/PznbIkisUmcBequi/scene.splinecode" />
-                                            </Suspense>
+                                            {/* </Suspense> */}
                                         </div>
                                     </div>
                                 </div>
