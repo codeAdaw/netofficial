@@ -18,6 +18,7 @@ export default function Home() {
    const [typef,setTypef] = useState(false);
    const typedel = React.useRef(null);
    useLayoutEffect(()=>{
+        console.log('--typedel--',typedel)
         if(!initDone){return};
         const typed = new Typed('#tttt',{
             strings: ["NETREEL.AI"],
@@ -56,7 +57,7 @@ export default function Home() {
                             <ReactFullpage.Wrapper>
                                   <div id="bannerWrap" className="section mx-auto w-full lg:h-screen bg-cover relative">
                                         {/* <Suspense> */}
-                                        {/* <Spline className="lg:h-full lg:w-full sm:h-banner"  scene="https://prod.spline.design/3ORc254TAgLvqGLw/scene.splinecode" /> */}
+                                        <Spline className="lg:h-full lg:w-full sm:h-banner"  scene="https://prod.spline.design/3ORc254TAgLvqGLw/scene.splinecode" />
                                         {/* </Suspense> */}
                                         <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:top-96 lg:top-0 bottom-0 left-0 right-0">
                                             <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900"></h1>
@@ -80,14 +81,14 @@ export default function Home() {
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
+                                    {/* <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/> */}
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative' >
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         <div className='mb-8 w-full h-5 relative'>
                                             <Image src='/images/part3img1.png' alt="" fill/>
                                         </div>
                                             <div className="flex lg:flex-row  sm:flex-col gap-8 z-9">
-                                                <div className="lg:w-1/2 sm:w-auto">
+                                                <div className="w-1/2">
                                                     <h3 className='mb-4 text-xl font-medium'>{intl.get('PART2H2')}</h3>
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT1')}
@@ -104,7 +105,7 @@ export default function Home() {
                                                             </li>
                                                     </ul>
                                                 </div>
-                                                <div className="lg:w-1/2 sm:w-auto">
+                                                <div className="w-1/2">
                                                     <h3 className='mb-4 text-xl font-medium'>{intl.get('PART2H3')}</h3>
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT2')}
@@ -132,7 +133,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart3 bg-cover relative z-9">
                                     <div className='lg:h-4/5 sm:h-80 lg:relative sm:relative top-0 bottom-0 right-0 left-0 mx-auto w-auto lg:px-28 sm:px-mspaces 3xl:w-3/4'>
                                         <h2 className='lg:text-4xl lg:mb-12 sm:text-2xl text-center font-medium'>{intl.get('PART3H1')}</h2>
-                                             <img className='mx-auto lg:w-4/5 h-auto realtive'  src='/type3 3.png' alt=""/>
+                                            {/* <img className='mx-auto lg:w-4/5 h-auto realtive'  src='/type3 3.png' alt=""/> */}
                                         <p className='text-center text-base lg:mt-5'>{intl.get('PART3TEXT')}</p>
                                     </div>
                                 </div>

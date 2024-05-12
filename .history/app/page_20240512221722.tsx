@@ -18,6 +18,7 @@ export default function Home() {
    const [typef,setTypef] = useState(false);
    const typedel = React.useRef(null);
    useLayoutEffect(()=>{
+        console.log('--typedel--',typedel)
         if(!initDone){return};
         const typed = new Typed('#tttt',{
             strings: ["NETREEL.AI"],

@@ -1,23 +1,48 @@
-import React from 'react';
+"use client";
+import React,{useEffect, useState} from 'react';
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import intl from 'react-intl-universal'
 // import { useRouter } from 'next/router';
 import "./globals.css";
 import SwitchLocal  from "./components/switchLocal";
 import SwitchPage from "./components/navBtns";
 const inter = Inter({ subsets: ["latin"] });
+const locales = {
+  "en-US": require('./locales/en-US.json'),
+  "zh-CH": require('./locales/zh-CN.json'),
+  "zh-TW": require('./locales/zh-TW.json'),
+};
 // Metadata
 export const metadata: Metadata = {
-  title: "NetReel.AI--Explore the AI-driven digital entertainment world.",
-  description: "Explore the AI-driven digital entertainment world.",
+  title: "Root Layout",
+  description: "Root Layout",
 };
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [initDone, setInitDone] = useState(false);
   let path = '';
+  if (typeof window !== 'undefined') {
+    // 在浏览器环境下执行的代码
+    path = window.location.pathname;
+  }
+    useEffect(() => {
+      intl.init({
+          currentLocale: intl.determineLocale({urlLocaleKey: "language", cookieLocaleKey: "language"}),
+          locales,
+      }).then(() => {
+          setInitDone(true);
+      });
+      intl.determineLocale({
+          urlLocaleKey: "language",
+          cookieLocaleKey: "language"
+      });
+  }, []);
+  
   return (
     <html lang="en">
       <body className={inter.className}>

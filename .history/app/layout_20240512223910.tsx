@@ -9,14 +9,15 @@ import SwitchPage from "./components/navBtns";
 const inter = Inter({ subsets: ["latin"] });
 // Metadata
 export const metadata: Metadata = {
-  title: "NetReel.AI--Explore the AI-driven digital entertainment world.",
-  description: "Explore the AI-driven digital entertainment world.",
+  title: "Root Layout",
+  description: "Root Layout",
 };
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [initDone, setInitDone] = useState(false);
   let path = '';
   return (
     <html lang="en">

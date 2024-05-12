@@ -1,5 +1,5 @@
-import React from 'react';
-import type { Metadata } from "next";
+import React,{useEffect, useState} from 'react';
+// import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 // import { useRouter } from 'next/router';
@@ -8,16 +8,15 @@ import SwitchLocal  from "./components/switchLocal";
 import SwitchPage from "./components/navBtns";
 const inter = Inter({ subsets: ["latin"] });
 // Metadata
-export const metadata: Metadata = {
-  title: "NetReel.AI--Explore the AI-driven digital entertainment world.",
-  description: "Explore the AI-driven digital entertainment world.",
-};
+// export const metadata: Metadata = {
+//   title: "Root Layout",
+//   description: "Root Layout",
+// };
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  let path = '';
   return (
     <html lang="en">
       <body className={inter.className}>

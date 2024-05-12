@@ -18,6 +18,7 @@ export default function Home() {
    const [typef,setTypef] = useState(false);
    const typedel = React.useRef(null);
    useLayoutEffect(()=>{
+        console.log('--typedel--',typedel)
         if(!initDone){return};
         const typed = new Typed('#tttt',{
             strings: ["NETREEL.AI"],
@@ -72,15 +73,15 @@ export default function Home() {
                                             <p className='text-justify leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 lg:basis-2/5 bg-s2bg bg-100%">
-                                            <Suspense>
+                                            {/* <Suspense>
                                                 <Spline className="w-full h-full"  scene="https://prod.spline.design/PznbIkisUmcBequi/scene.splinecode" />
-                                            </Suspense>
+                                            </Suspense> */}
                                         </div>
                                     </div>
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
+                                    {/* <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/> */}
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0 sm:top-4 bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative' >
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         <div className='mb-8 w-full h-5 relative'>
