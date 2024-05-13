@@ -9,7 +9,7 @@
 "use client";
 //import logo from '@/assets/Netreel_logo@2x.png';
 //import { useMediaQuery } from 'react-responsive';
-//import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 //import { pdfjs, Document, Page } from 'react-pdf';
 //import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 // import 'react-pdf/dist/esm/Page/TextLayer.css';
@@ -20,7 +20,7 @@
 //   standardFontDataUrl: '/standard_fonts/',
 // };
 // type PDFFile = string | File | null;
-export default function PdfHome() {
+export default function Home() {
   // 判断是否是移动端
    //const [isMobile, setIsMobile] = useState(false);
   // const [file, setFile] = useState('./NetReel.pdf');
