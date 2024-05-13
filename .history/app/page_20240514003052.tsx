@@ -64,12 +64,12 @@ export default function Home() {
                                         
                                         {
                                            !isM && 
-                                           <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
+                                           <video style={{opacity: typef ? '0' : '1'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
                                                 <source src="bannervs.mp4" type="video/mp4"/>
                                             </video>
                                         }
                                         {
-                                           isM && <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
+                                           isM && <video style={{opacity: typef ? '0' : '1'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
                                                 <source src="/mbannervs.mp4" type="video/mp4"/>
                                             </video>
                                         }
