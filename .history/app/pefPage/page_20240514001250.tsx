@@ -2,13 +2,13 @@
  * @Author: codeAdaw 18810539364@sina.cn
  * @Date: 2024-05-08 18:54:48
  * @LastEditors: codeAdaw 18810539364@sina.cn
- * @LastEditTime: 2024-05-14 00:13:59
+ * @LastEditTime: 2024-05-14 00:12:48
  * @FilePath: /netofficial/app/pefPage/page.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 "use client";
 //import logo from '@/assets/Netreel_logo@2x.png';
-//import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 import { useEffect, useState } from 'react';
 //import { pdfjs, Document, Page } from 'react-pdf';
 //import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
