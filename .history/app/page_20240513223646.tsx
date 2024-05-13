@@ -65,7 +65,7 @@ export default function Home() {
                                         }
                                         {
                                            isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0" autoPlay muted loop>
-                                                <source src="/mbannerv.mp4" type="video/mp4"/>
+                                                <source src="/Mbannerv.mp4" type="video/mp4"/>
                                             </video>
                                         }
                                         <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:bottom-80 sm:bottom-0 lg:top-0 bottom-0 left-0 right-0">
