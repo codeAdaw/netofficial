@@ -54,7 +54,7 @@ export default function SwitchLocal() {
     }
   },[])
   return (
-      <div style={{visibility: w?.location?.pathname != '/' ? 'hidden' : 'visible'}}>
+      <div style={{visibility: window?.location.pathname != '/' ? 'hidden' : 'visible'}}>
           <Dropdown menu={{ items,onClick }} placement="bottomLeft" arrow={{ pointAtCenter: true }}>
             <a onClick={(e) => e.preventDefault()}>
                 <Button>{lan}</Button>
