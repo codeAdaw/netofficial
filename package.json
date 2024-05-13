@@ -14,10 +14,13 @@
     "animate.css": "^4.1.1",
     "antd": "^5.17.0",
     "next": "14.2.3",
+    "pdfjs-dist": "^4.2.67",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.2",
     "react-intl-universal": "^2.11.1",
+    "react-pdf": "^8.0.2",
+    "react-responsive": "^10.0.0",
     "typed.js": "^2.1.0",
     "typedjs": "^0.2.2"
   },
