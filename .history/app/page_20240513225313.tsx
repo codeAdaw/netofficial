@@ -57,18 +57,18 @@ export default function Home() {
                         return (
                             <ReactFullpage.Wrapper>
                                   <div id="bannerWrap" className="bg-[#09082a] section mx-auto w-full lg:h-screen bg-cover relative">
-                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center lg:absolute sm:bottom-80 sm:bottom-0 lg:top-0 lg:bottom-0 left-0 right-0 z-10">
-                                            <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900 z-10"></h1>
-                                            {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl z-10">{intl.get("SLOGEN")}</p>}
+                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center  sm:bottom-80 sm:bottom-0 lg:top-0 bottom-0 left-0 right-0 z-10">
+                                            <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900"></h1>
+                                            {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl">{intl.get("SLOGEN")}</p>}
                                         </div>
                                         
                                         {
-                                           !isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
+                                           !isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-1" autoPlay muted loop>
                                                 <source src="/bannerv.mp4" type="video/mp4"/>
                                             </video>
                                         }
                                         {
-                                           isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
+                                           isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-1" autoPlay muted loop>
                                                 <source src="/mbannerv.mp4" type="video/mp4"/>
                                             </video>
                                         }
