@@ -57,14 +57,14 @@ export default function Home() {
                         return (
                             <ReactFullpage.Wrapper>
                                   <div id="bannerWrap" className="bg-[#09082a] section mx-auto w-full lg:h-screen bg-cover relative">
-                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:bottom-80 sm:bottom-0 lg:top-0 lg:bottom-0 left-0 right-0 z-10">
+                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center lg:absolute sm:bottom-80 sm:bottom-0 lg:top-0 lg:bottom-0 left-0 right-0 z-10">
                                             <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900 z-10"></h1>
                                             {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl z-10">{intl.get("SLOGEN")}</p>}
                                         </div>
                                         
                                         {
                                            !isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
-                                                <source src="bannerv.mp4" type="video/mp4"/>
+                                                <source src="images/mbanner.png" type="video/mp4"/>
                                             </video>
                                         }
                                         {
@@ -85,11 +85,11 @@ export default function Home() {
                                         <div className="lg:w-120 lg:h-120 sm:w-100 sm:h-100 sm:mb-20  bg-100% z-1">
                                             {
                                                 isM && 
-                                                 <Suspense>
+                                                // <Suspense>
                                                    <video className="full full" autoPlay muted loop>
                                                         <source src="/mtype1v.mp4" type="video/mp4"/>
                                                     </video>
-                                                </Suspense>
+                                                // </Suspense>
                                             }
                                             {
                                                 !isM && 

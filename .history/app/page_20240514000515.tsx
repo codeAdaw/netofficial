@@ -85,11 +85,11 @@ export default function Home() {
                                         <div className="lg:w-120 lg:h-120 sm:w-100 sm:h-100 sm:mb-20  bg-100% z-1">
                                             {
                                                 isM && 
-                                                 <Suspense>
+                                                // <Suspense>
                                                    <video className="full full" autoPlay muted loop>
                                                         <source src="/mtype1v.mp4" type="video/mp4"/>
                                                     </video>
-                                                </Suspense>
+                                                // </Suspense>
                                             }
                                             {
                                                 !isM && 

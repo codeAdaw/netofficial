@@ -64,7 +64,7 @@ export default function Home() {
                                         
                                         {
                                            !isM && <video style={{visibility: typef ? 'visible' : 'hidden'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
-                                                <source src="bannerv.mp4" type="video/mp4"/>
+                                                <source src="images/mbanner.png" type="video/mp4"/>
                                             </video>
                                         }
                                         {
@@ -85,11 +85,11 @@ export default function Home() {
                                         <div className="lg:w-120 lg:h-120 sm:w-100 sm:h-100 sm:mb-20  bg-100% z-1">
                                             {
                                                 isM && 
-                                                 <Suspense>
+                                                // <Suspense>
                                                    <video className="full full" autoPlay muted loop>
                                                         <source src="/mtype1v.mp4" type="video/mp4"/>
                                                     </video>
-                                                </Suspense>
+                                                // </Suspense>
                                             }
                                             {
                                                 !isM && 
