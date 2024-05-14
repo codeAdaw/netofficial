@@ -198,7 +198,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover relative z-9">
                                     <div className='lg:h-auto lg:relative sm:relative mx-auto w-auto lg:px-28 sm:px-mspaces 3xl:w-3/4'>
                                         <h2 className='lg:text-4xl lg:mb-8 sm:text-2xl sm:mb-20 text-center font-medium sm:px-mspace'>{intl.get('PART3H1')}</h2>
-                                        <img className='mx-auto h-auto realtive lg:mb-8 sm:mb-20'  src='/type3 3.png' alt=""/>
+                                        <img className='mx-auto h-auto realtive sm:mb-20'  src='/type3 3.png' alt=""/>
                                         <p className='text-center text-base lg:mt-5 sm:px-mspaces'>{intl.get('PART3TEXT')}</p>
                                     </div>
                                 </div>
