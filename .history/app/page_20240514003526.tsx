@@ -78,8 +78,8 @@ export default function Home() {
                             {/* part 1 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover lg:px-28  sm:px-mspace">
                                     <div className="flex lg:flex-row sm:flex-col-reverse sm:text-center items-center lg:gap-x-14 3xl:w-3/4 mx-auto">
-                                        <Suspense>
-                                            <img className="absolute left-0 top-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
+                                    <Suspense>
+                                        <img className="absolute left-0 top-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
                                         </Suspense>
                                         <div className="z-10">
                                             <h2 className='lg:text-4xl sm:text-2xl mb-10 lg:text-left'>{intl.get("PART1H1")}</h2>
@@ -106,9 +106,7 @@ export default function Home() {
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <Suspense>
-                                        <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
-                                    </Suspense>
+                                    <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0  bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative z-10' >
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         {
@@ -129,19 +127,17 @@ export default function Home() {
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
-                                                    <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 mb-6 z-10'>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                    <Image  src='/images/icon1.png' alt="" fill/>
-                                                                </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                    <Image  src='/images/icon2.png' alt="" fill/>
-                                                                </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                    <Image  src='/images/icon3.png' alt="" fill/>
-                                                                </li>
-                                                        </ul>
-                                                    </Suspense>
+                                                    <ul className='flex justify-around lg:mt-12 sm:mt-6 mb-6 z-10'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                                <Image  src='/images/icon1.png' alt="" fill/>
+                                                            </li>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                                <Image  src='/images/icon2.png' alt="" fill/>
+                                                            </li>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                                <Image  src='/images/icon3.png' alt="" fill/>
+                                                            </li>
+                                                    </ul>
                                                 </div>
                                                 {
                                                     isM &&
@@ -199,7 +195,7 @@ export default function Home() {
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
-                                    <div className='lg:px-28 sm:px-mspace 3xl:relative' >
+                                    <div className='lg:px-28 sm:px-mspace 3xl:w-3/4 3xl:relative' >
                                         <img className="mx-auto mb-10 lg:mt-24 animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
                                         <h2 className='lg:text-4xl sm:text-3xl font-medium mb-10 text-center border-solid border-b border-white lg:leading-maxx sm:py-5'>{intl.get('PART4H1')}</h2>
                                         <p className="text-justify">{intl.get('PART4TEXT')}</p>

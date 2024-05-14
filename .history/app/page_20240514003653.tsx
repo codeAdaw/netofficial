@@ -106,9 +106,7 @@ export default function Home() {
                                 </div>
                             {/* part 2 */}
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart2 bg-cover relative">
-                                    <Suspense>
-                                        <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
-                                    </Suspense>
+                                    <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0  bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative z-10' >
                                         <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         {
@@ -199,7 +197,7 @@ export default function Home() {
                                 </div>
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
-                                    <div className='lg:px-28 sm:px-mspace 3xl:relative' >
+                                    <div className='lg:px-28 sm:px-mspace 3xl:w-3/4 3xl:relative' >
                                         <img className="mx-auto mb-10 lg:mt-24 animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
                                         <h2 className='lg:text-4xl sm:text-3xl font-medium mb-10 text-center border-solid border-b border-white lg:leading-maxx sm:py-5'>{intl.get('PART4H1')}</h2>
                                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
