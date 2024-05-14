@@ -69,7 +69,7 @@ export default function Home() {
                                             </video>
                                         }
                                         {
-                                           isM && <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop preload="auto">
+                                           isM && <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0" autoPlay muted loop>
                                                 <source src="/mbannervs.mp4" type="video/mp4"/>
                                             </video>
                                         }
