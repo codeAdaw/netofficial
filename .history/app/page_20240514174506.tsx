@@ -45,7 +45,7 @@ export default function Home() {
     }, []);
     useEffect(() => {
         if(!initDone || bvideo.current == null){return};
-        bvideo.current.playbackRate = 0.2;
+        bvideo.current.playbackRate = 0.5;
     }, [isM,initDone]);
   return (
     <>

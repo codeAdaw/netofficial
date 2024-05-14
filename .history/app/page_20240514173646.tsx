@@ -19,7 +19,6 @@ export default function Home() {
    const [typef,setTypef] = useState(false);
    const isM = useMediaQuery({ query: '(max-width: 768px)' });
    const typedel = React.useRef(null);
-   const bvideo:any = React.useRef(null);
    useLayoutEffect(()=>{
         if(!initDone){return};
         const typed = new Typed('#tttt',{
@@ -43,10 +42,6 @@ export default function Home() {
             cookieLocaleKey: "language"
         });
     }, []);
-    useEffect(() => {
-        if(!initDone || bvideo.current == null){return};
-        bvideo.current.playbackRate = 0.2;
-    }, [isM,initDone]);
   return (
     <>
      { initDone &&
@@ -69,7 +64,7 @@ export default function Home() {
                                         
                                         {
                                            !isM && 
-                                           <video id="bvideo" ref={bvideo} style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0"  autoPlay muted loop preload="auto">
+                                           <video ref={bvideo} style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-0 z-0"  autoPlay muted loop preload="auto">
                                                 <source src="/bannervs.mp4" type="video/mp4"/>
                                             </video>
                                         }
