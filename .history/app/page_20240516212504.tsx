@@ -166,7 +166,7 @@ export default function Home() {
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 lg:mb-5 sm:mb-8'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 lg:mb-5'>
                                                             <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon4.png' alt="" fill/>
                                                             </li>
@@ -200,7 +200,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover relative z-9">
                                     <div className='lg:h-auto lg:relative sm:relative mx-auto w-auto lg:px-28 sm:px-mspaces 3xl:w-3/4'>
                                         <h2 className='lg:text-4xl lg:mb-8 sm:text-2xl sm:mb-20 text-center font-medium sm:px-mspace'>{intl.get('PART3H1')}</h2>
-                                        <img className='mx-auto lg:h-80 realtive lg:mb-8 sm:mb-20'  src='/type3 3.png' alt=""/>
+                                        <img className='mx-auto h-80 realtive lg:mb-8 sm:mb-20'  src='/type3 3.png' alt=""/>
                                         <p className='text-center text-base lg:mt-5 sm:px-mspaces'>{intl.get('PART3TEXT')}</p>
                                     </div>
                                 </div>
@@ -215,7 +215,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative">
                                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
-                                        <img className='sm:w-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
+                                        <img className='sm:w-48 lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
                                         {/* </div> */}
                                         <div className='lg:w-120'>
                                             <h3 className='lg:text-3xl sm:2xl mb-2.5'>{intl.get('PART5H1')}</h3>

@@ -62,7 +62,7 @@ export default function Home() {
                         return (
                             <ReactFullpage.Wrapper>
                                   <div id="bannerWrap" className="bg-[#09082a] section mx-auto w-full lg:h-screen bg-cover relative">
-                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:bottom-48 sm:bottom-0 lg:top-0 lg:bottom-0 left-0 right-0 z-10">
+                                        <div className="lg:w-1/2 lg:h-24 md:h-96 m-auto text-center absolute sm:bottom-80 sm:bottom-0 lg:top-0 lg:bottom-0 left-0 right-0 z-10">
                                             <h1  id="tttt" className="lg:text-8xl md:text-6xl sm:text-5xl sm:mt-24 lg:mt-0 font-extrabold text-write-900 z-10"></h1>
                                             {typef && <p className="animate__animated animate__fadeIn mt-4 text-write-500 lg:text-4xl md:text-2xl z-10">{intl.get("SLOGEN")}</p>}
                                         </div>
@@ -74,7 +74,7 @@ export default function Home() {
                                             </video>
                                         }
                                         {
-                                           isM && <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-24 z-0" autoPlay muted loop preload="auto">
+                                           isM && <video style={{opacity: typef ? '1' : '0'}} className="lg:w-full lg:h-full sm:w-full sm:h-banner absolute top-10 z-0" autoPlay muted loop preload="auto">
                                                 <source src="/mbannervs.mp4" type="video/mp4"/>
                                             </video>
                                         }
@@ -135,7 +135,7 @@ export default function Home() {
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 lg:mb-6 z-10'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 mb-6 z-10'>
                                                                 <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon1.png' alt="" fill/>
                                                                 </li>
@@ -165,19 +165,17 @@ export default function Home() {
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
-                                                    <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 lg:mb-5 sm:mb-8'>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                <Image  src='/images/icon4.png' alt="" fill/>
-                                                            </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                <Image  src='/images/icon5.png' alt="" fill/>
-                                                            </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
-                                                                <Image  src='/images/icon6.png' alt="" fill/>
-                                                            </li>
-                                                        </ul>
-                                                    </Suspense>
+                                                    <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 mb-5'>
+                                                        <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                            <Image  src='/images/icon4.png' alt="" fill/>
+                                                        </li>
+                                                        <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                            <Image  src='/images/icon5.png' alt="" fill/>
+                                                        </li>
+                                                        <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
+                                                            <Image  src='/images/icon6.png' alt="" fill/>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                                 
                                             </div>
@@ -200,7 +198,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover relative z-9">
                                     <div className='lg:h-auto lg:relative sm:relative mx-auto w-auto lg:px-28 sm:px-mspaces 3xl:w-3/4'>
                                         <h2 className='lg:text-4xl lg:mb-8 sm:text-2xl sm:mb-20 text-center font-medium sm:px-mspace'>{intl.get('PART3H1')}</h2>
-                                        <img className='mx-auto lg:h-80 realtive lg:mb-8 sm:mb-20'  src='/type3 3.png' alt=""/>
+                                        <img className='mx-auto h-80 realtive lg:mb-8 sm:mb-20'  src='/type3 3.png' alt=""/>
                                         <p className='text-center text-base lg:mt-5 sm:px-mspaces'>{intl.get('PART3TEXT')}</p>
                                     </div>
                                 </div>
@@ -215,7 +213,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative">
                                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
-                                        <img className='sm:w-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
+                                        <img className='sm:w-48 lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
                                         {/* </div> */}
                                         <div className='lg:w-120'>
                                             <h3 className='lg:text-3xl sm:2xl mb-2.5'>{intl.get('PART5H1')}</h3>
