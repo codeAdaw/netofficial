@@ -118,7 +118,7 @@ export default function Home() {
                                         <h2 className='lg:text-4xl lg:mb-12 sm:mb-6 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         {
                                             isM &&
-                                            <div className='lg:mb-8 sm:mb-2 w-full h-5 relative'>
+                                            <div className='lg:mb-8 sm:mb-4 w-full h-5 relative'>
                                                 <Image src='/images/mfilmtop@2x.png' alt="" fill/>
                                             </div>
                                         }
@@ -156,7 +156,7 @@ export default function Home() {
                                                 }
                                                 {
                                                     isM &&
-                                                    <div className='w-full h-5 relative sm:mb-0'>
+                                                    <div className='w-full h-5 relative'>
                                                         <Image src='/images/mfilmtop@2x.png' alt="" fill/>
                                                     </div>
                                                 }
@@ -166,7 +166,7 @@ export default function Home() {
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 z-10 lg:mb-5 sm:mb-4'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 z-10 lg:mb-5 sm:mb-8'>
                                                             <li className='lg:w-12 lg:h-12 sm:w-6 sm:h-6 relative'>
                                                                 <Image  src='/images/icon4.png' alt="" fill/>
                                                             </li>

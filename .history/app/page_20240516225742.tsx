@@ -156,7 +156,7 @@ export default function Home() {
                                                 }
                                                 {
                                                     isM &&
-                                                    <div className='w-full h-5 relative sm:mb-0'>
+                                                    <div className='w-full h-5 relative'>
                                                         <Image src='/images/mfilmtop@2x.png' alt="" fill/>
                                                     </div>
                                                 }
