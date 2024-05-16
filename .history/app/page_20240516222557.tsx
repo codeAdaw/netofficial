@@ -115,10 +115,10 @@ export default function Home() {
                                         <img className="absolute left-0 bottom-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
                                     </Suspense>
                                     <div className='lg:h-1/2 sm:h-auto lg:absolute sm:relative lg:top-0  bottom-0 m-auto w-auto  lg:px-28 sm:px-mspace  3xl:w-3/4 3xl:relative z-10' >
-                                        <h2 className='lg:text-4xl lg:mb-12 sm:mb-6 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
+                                        <h2 className='lg:text-4xl mb-12 text-center sm:text-2xl'>{intl.get('PART2H1')}</h2>
                                         {
                                             isM &&
-                                            <div className='lg:mb-8 sm:mb-4 w-full h-5 relative'>
+                                            <div className='mb-8 w-full h-5 relative'>
                                                 <Image src='/images/mfilmtop@2x.png' alt="" fill/>
                                             </div>
                                         }
@@ -130,19 +130,19 @@ export default function Home() {
                                         }
                                             <div className="flex lg:flex-row  sm:flex-col gap-8 z-9">
                                                 <div className="lg:w-1/2 sm:w-auto">
-                                                    <h3 className='lg:mb-4 sm:mb-2 text-xl font-medium'>{intl.get('PART2H2')}</h3>
+                                                    <h3 className='mb-4 text-xl font-medium'>{intl.get('PART2H2')}</h3>
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 lg:mb-6 z-10'>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 lg:mb-6 z-10'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon1.png' alt="" fill/>
                                                                 </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon2.png' alt="" fill/>
                                                                 </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon3.png' alt="" fill/>
                                                                 </li>
                                                         </ul>
@@ -166,14 +166,14 @@ export default function Home() {
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 z-10 lg:mb-5 sm:mb-8'>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 lg:mb-5 sm:mb-8'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon4.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon5.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon6.png' alt="" fill/>
                                                             </li>
                                                         </ul>

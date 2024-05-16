@@ -135,14 +135,14 @@ export default function Home() {
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 lg:mb-6 z-10'>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 lg:mb-6 z-10'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon1.png' alt="" fill/>
                                                                 </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon2.png' alt="" fill/>
                                                                 </li>
-                                                                <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                                <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                     <Image  src='/images/icon3.png' alt="" fill/>
                                                                 </li>
                                                         </ul>
@@ -166,14 +166,14 @@ export default function Home() {
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
                                                     <Suspense>
-                                                        <ul className='flex justify-around lg:mt-12 sm:mt-4 z-10 lg:mb-5 sm:mb-8'>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                        <ul className='flex justify-around lg:mt-12 sm:mt-6 z-10 lg:mb-5 sm:mb-8'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon4.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon5.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-11 sm:h-11 relative'>
                                                                 <Image  src='/images/icon6.png' alt="" fill/>
                                                             </li>
                                                         </ul>
