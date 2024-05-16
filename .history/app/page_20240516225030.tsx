@@ -167,13 +167,13 @@ export default function Home() {
                                                     </p>
                                                     <Suspense>
                                                         <ul className='flex justify-around lg:mt-12 sm:mt-4 z-10 lg:mb-5 sm:mb-8'>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-6 sm:h-6 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
                                                                 <Image  src='/images/icon4.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-6 sm:h-6 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
                                                                 <Image  src='/images/icon5.png' alt="" fill/>
                                                             </li>
-                                                            <li className='lg:w-12 lg:h-12 sm:w-6 sm:h-6 relative'>
+                                                            <li className='lg:w-12 lg:h-12 sm:w-8 sm:h-8 relative'>
                                                                 <Image  src='/images/icon6.png' alt="" fill/>
                                                             </li>
                                                         </ul>
