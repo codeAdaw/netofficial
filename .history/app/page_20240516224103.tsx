@@ -88,7 +88,7 @@ export default function Home() {
                                         </Suspense>
                                         <div className="z-10">
                                             <h2 className='lg:text-4xl sm:text-2xl mb-10 lg:text-left'>{intl.get("PART1H1")}</h2>
-                                            <p className='sm:text-left lg:text-left leading-5'>{intl.get("PART1TEXT")}</p>
+                                            <p className='sm:text-justify lg:text-left leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 sm:w-80 sm:h-80 sm:mb-20  bg-100% z-1">
                                             {

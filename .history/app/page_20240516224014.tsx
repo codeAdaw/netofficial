@@ -88,7 +88,7 @@ export default function Home() {
                                         </Suspense>
                                         <div className="z-10">
                                             <h2 className='lg:text-4xl sm:text-2xl mb-10 lg:text-left'>{intl.get("PART1H1")}</h2>
-                                            <p className='sm:text-left lg:text-left leading-5'>{intl.get("PART1TEXT")}</p>
+                                            <p className='sm:text-justify lg:text-left leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
                                         <div className="lg:w-120 lg:h-120 sm:w-80 sm:h-80 sm:mb-20  bg-100% z-1">
                                             {
@@ -130,7 +130,7 @@ export default function Home() {
                                         }
                                             <div className="flex lg:flex-row  sm:flex-col gap-8 z-9">
                                                 <div className="lg:w-1/2 sm:w-auto">
-                                                    <h3 className='lg:mb-4 sm:mb-2 lg:text-xl sm:text-lg lg:font-medium'>{intl.get('PART2H2')}</h3>
+                                                    <h3 className='lg:mb-4 sm:mb-2 text-xl font-medium'>{intl.get('PART2H2')}</h3>
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT1')}
                                                     </p>
@@ -161,7 +161,7 @@ export default function Home() {
                                                     </div>
                                                 }
                                                 <div className="lg:w-1/2 sm:w-auto">
-                                                    <h3 className='lg:mb-4 sm:mb-2 lg:text-xl sm:text-lg lg:font-medium'>{intl.get('PART2H3')}</h3>
+                                                    <h3 className='lg:mb-4 sm:mb-2 lg:text-xl sm:text-lg font-medium'>{intl.get('PART2H3')}</h3>
                                                     <p className="text-sm">
                                                         {intl.get('PART2TEXT2')}
                                                     </p>
