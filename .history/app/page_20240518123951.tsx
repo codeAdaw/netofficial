@@ -90,7 +90,7 @@ export default function Home() {
                                             <h2 className='lg:text-4xl sm:text-2xl mb-10 lg:text-left'>{intl.get("PART1H1")}</h2>
                                             <p className='sm:text-left lg:text-left leading-5'>{intl.get("PART1TEXT")}</p>
                                         </div>
-                                        <div className="lg:w-120 lg:h-120 sm:w-64 sm:h-64 sm:mb-10 bg-100% z-1">
+                                        <div className="lg:w-120 lg:h-120 sm:w-64 sm:h-64 sm:mb-20 bg-100% z-1">
                                             {
                                                 isM && 
                                                  <Suspense>
