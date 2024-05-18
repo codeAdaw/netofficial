@@ -207,7 +207,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
                                     <div className='lg:px-28 sm:px-mspace 3xl:relative' >
-                                        <img className="mx-auto mb-10 lg:mt-24 sm:h-40 animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
+                                        <img className="mx-auto mb-10 lg:mt-24 sm:h-20 animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
                                         <h2 className='lg:text-4xl sm:text-3xl font-medium mb-10 text-center border-solid border-b border-white lg:leading-maxx sm:py-5'>{intl.get('PART4H1')}</h2>
                                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
                                     </div>
