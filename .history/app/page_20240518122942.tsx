@@ -81,7 +81,7 @@ export default function Home() {
                                         
                                 </div>
                             {/* part 1 */}
-                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover lg:px-28  sm:px-mspace sm:pt-20">
+                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-screen bg-cover lg:px-28  sm:px-mspace sm:pt-40">
                                     <div className="flex lg:flex-row sm:flex-col-reverse sm:text-center items-center lg:gap-x-14 3xl:w-3/4 mx-auto">
                                         <Suspense>
                                             <img className="absolute left-0 top-96 lg:w-120 z-0"  src='/images/bgleft.png' alt=""/>
