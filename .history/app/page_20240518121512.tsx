@@ -204,7 +204,7 @@ export default function Home() {
                                         <p className='text-center text-base lg:mt-5 sm:px-mspaces'>{intl.get('PART3TEXT')}</p>
                                     </div>
                                 </div>
-                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative sm:pt-20">
+                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
                                     <div className='lg:px-28 sm:px-mspace 3xl:relative' >
                                         <img className="mx-auto mb-10 lg:mt-24 sm:h-40 animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
@@ -212,7 +212,7 @@ export default function Home() {
                                         <p className="text-justify">{intl.get('PART4TEXT')}</p>
                                     </div>
                                 </div>
-                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative sm:pt-20">
+                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative pt-20">
                                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
                                         <img className='sm:h-40 lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
