@@ -215,7 +215,7 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-full bg-cover relative">
                                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
-                                        <img className='sm:h-40 sm:mb-6 lg:h-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
+                                        <img className='sm:h-40 sm:mb-8 lg:h-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
                                         {/* </div> */}
                                         <div className='lg:w-120'>
                                             <h3 className='lg:text-3xl sm:2xl mb-2.5'>{intl.get('PART5H1')}</h3>
