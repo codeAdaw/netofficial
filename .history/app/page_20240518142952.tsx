@@ -94,7 +94,7 @@ export default function Home() {
                                             {
                                                 isM && 
                                                  <Suspense>
-                                                   <video style={{height: '100%'}} className="full full" controls={false} autoPlay muted loop>
+                                                   <video style={{height: '100%'}} className="full full" autoPlay muted loop>
                                                         <source src="/mtype1v.mp4" type="video/mp4"/>
                                                     </video>
                                                 </Suspense>
