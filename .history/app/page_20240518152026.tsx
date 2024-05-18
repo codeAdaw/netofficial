@@ -94,9 +94,10 @@ export default function Home() {
                                             {
                                                 isM && 
                                                  <Suspense>
-                                                   <video style={{height: '100%'}} className="full full" data-wf-ignore="true" data-object-fit="cover" playsInline autoPlay muted loop>
+                                                   {/* <video style={{height: '100%'}} className="full full" data-wf-ignore="true" data-object-fit="cover" playsInline autoPlay muted loop>
                                                         <source src="/mtype1v.mp4" type="video/mp4"/>
-                                                    </video>
+                                                    </video> */}
+                                                    <Spline style={{height: '100%'}}  className="w-60 h-60"  scene="https://prod.spline.design/PznbIkisUmcBequi/scene.splinecode" />
                                                 </Suspense>
                                             }
                                             {
@@ -207,15 +208,15 @@ export default function Home() {
                                 <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart4 relative sm:pt-20">
                                     <img className="absolute top-0 left-0 right-0 m-auto z-0 lg:w-120 lh:h-120" src="/images/part5_2img.png"/>
                                     <div className='lg:px-28 sm:px-mspace 3xl:relative' >
-                                        <img className="mx-auto mb-10 lg:mt-24 sm:h-36 sm:h-auto animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
+                                        <img className="mx-auto mb-10 lg:mt-24 sm:h-40 sm:h-auto animate__animated animate__fadeIn"  src='/images/part5img.png' alt=""/>
                                         <h2 className='lg:text-4xl sm:text-3xl font-medium mb-10 text-center border-solid border-b border-white lg:leading-maxx sm:py-5'>{intl.get('PART4H1')}</h2>
-                                        <p className="lg:text-justify sm:text-left">{intl.get('PART4TEXT')}</p>
+                                        <p className="text-justify">{intl.get('PART4TEXT')}</p>
                                     </div>
                                 </div>
-                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-full bg-cover relative">
+                                <div className="section bg-[#100F22] mx-auto w-full lg:h-screen sm:h-hpart5 bg-cover relative sm:pt-20">
                                     <div className='flex lg:flex-row sm:flex-col items-center justify-around lg:px-28 sm:px-mspace 3xl:w-3/4 mx-auto'>
                                         {/* <div className='sm:w-48 lg:w-96 h-auto relative'> */}
-                                        <img className='sm:h-40 sm:mb-8 lg:h-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
+                                        <img className='sm:h-40 lg:h-auto lg:w-96 h-auto animate__animated animate__zoomIn'  src='/images/part6img.png'  alt=""/>
                                         {/* </div> */}
                                         <div className='lg:w-120'>
                                             <h3 className='lg:text-3xl sm:2xl mb-2.5'>{intl.get('PART5H1')}</h3>
