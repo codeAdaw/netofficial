@@ -3,7 +3,7 @@
 import React, {useState, useEffect} from 'react';
 import { Button, Dropdown } from 'antd';
 import { useMediaQuery } from 'react-responsive';
-
+const isM = useMediaQuery({ query: '(max-width: 768px)' });
 const items = [
   {
     key: '1',
@@ -32,7 +32,6 @@ const items = [
 ];
 export default function SwitchLocal() {
   const [lan, setLan] = useState('EN');
-  const isM = useMediaQuery({ query: '(max-width: 768px)' });
   const onClick = ({key}:any)=>{
     const obj = ['EN','简','蘩']
     setLan(obj[key-1])

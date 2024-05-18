@@ -40,12 +40,11 @@ export default function SwitchPage(props:any) {
   }
   return (
     <>
-        {contextHolder}
         {
             initDone && path != '/' && <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
         } 
         {
-            initDone && path == '/' &&  <a onClick={handelPdfPage} style={isM ? {position:'absolute',right: '70px',height:'12px',top:0,bottom:0,margin:'auto'} : {}} href="#" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
+            initDone && path == '/' &&  <a onClick={handelPdfPage} href="#" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
         }
     </>
   );

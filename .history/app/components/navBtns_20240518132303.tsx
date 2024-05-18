@@ -3,7 +3,6 @@
 import React, {useState, useEffect} from 'react';
 import intl from 'react-intl-universal'
 import { useMediaQuery } from 'react-responsive';
-import { message } from "antd";
 const locales = {
     "en-US": require('./../locales/en-US.json'),
     "zh-CH": require('./../locales/zh-CN.json'),
@@ -12,7 +11,6 @@ const locales = {
 export default function SwitchPage(props:any) {
   const [initDone, setInitDone] = useState(false);
   const isM = useMediaQuery({ query: '(max-width: 768px)' });
-  const [messageApi, contextHolder] = message.useMessage();
   let path = '';
   if (typeof window !== 'undefined') {
     // 在浏览器环境下执行的代码
@@ -32,20 +30,18 @@ export default function SwitchPage(props:any) {
   }, []);
   const handelPdfPage = ()=>{
     if(isM){
-      //  alert('请在pc端查看白皮书。')
-       messageApi.info('请在pc端查看白皮书');
+       alert('请在pc端查看白皮书。')
     }else{
       window.location.href = '/pefPage';
     }
   }
   return (
     <>
-        {contextHolder}
         {
             initDone && path != '/' && <a  href="/?language=en-US" className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
         } 
         {
-            initDone && path == '/' &&  <a onClick={handelPdfPage} style={isM ? {position:'absolute',right: '70px',height:'12px',top:0,bottom:0,margin:'auto'} : {}} href="#" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
+            initDone && path == '/' &&  <a onClick={handelPdfPage} href="#" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
         }
     </>
   );
