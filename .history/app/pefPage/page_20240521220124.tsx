@@ -1,11 +1,6 @@
 "use client";
 import { useMediaQuery } from 'react-responsive';
-// import MobilePdf from './mobilePdf';
-import dynamic from 'next/dynamic'
- 
-const DynamicMobilePdf = dynamic(() => import('./mobilePdf'), {
-  ssr: false,
-})
+import MobilePdf from './mobilePdf';
 export default function PdfHome() {
   // 判断是否是移动端
    const isM = useMediaQuery({ query: '(max-width: 768px)' });
@@ -14,7 +9,7 @@ export default function PdfHome() {
     <main className="h-full w-full">
       {
         isM && 
-          <DynamicMobilePdf />
+          <MobilePdf />
       }
       {
         !isM && 

@@ -1,20 +1,29 @@
 "use client";
 import { useMediaQuery } from 'react-responsive';
-// import MobilePdf from './mobilePdf';
-import dynamic from 'next/dynamic'
- 
-const DynamicMobilePdf = dynamic(() => import('./mobilePdf'), {
-  ssr: false,
-})
+import { Document, Page } from 'react-pdf';
 export default function PdfHome() {
   // 判断是否是移动端
    const isM = useMediaQuery({ query: '(max-width: 768px)' });
-
+   function onDocumentLoadSuccess() {
+      // 可以在这里处理加载成功的事件
+     // setNumPages(numPages);
+      console.log('PDF加载成功！');
+    }
   return (
     <main className="h-full w-full">
       {
         isM && 
-          <DynamicMobilePdf />
+        <Document
+          file={'/netreel.pdf'}
+          onLoadSuccess={onDocumentLoadSuccess}
+         >
+          {
+            // 使用map函数渲染每一页
+            Array.from(new Array(numPages), (el, index) => (
+              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+            ))
+          }
+        </Document>
       }
       {
         !isM && 
