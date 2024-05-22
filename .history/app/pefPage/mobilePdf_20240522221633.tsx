@@ -11,7 +11,7 @@ export default function Sample() {
             if(count === 1) return;
             setCount(count - 1)
           }, [count])}>Prev</Button>
-        <span className='inline-block leading-8'>{count}</span>
+        <span>{count}</span>
         <Button onClick={useCallback(() => {
           if(count === 77) return;
           setCount(count + 1)
