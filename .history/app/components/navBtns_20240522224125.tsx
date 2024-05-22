@@ -42,7 +42,7 @@ export default function SwitchPage(props:any) {
     <>
         {contextHolder}
         {
-            initDone && path != '/' && <a  href="/?language=en-US" style={isM ? {marginLeft:'120px'} : {}} className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
+            initDone && path != '/' && <a  href="/?language=en-US" style={isM ? {marginLeft:'70px'} : {}} className="text-sm font-semibold leading-6 text-wright">{intl.get("H1")}</a>
         } 
         {
             initDone && path == '/' &&  <a onClick={handelPdfPage} style={isM ? {marginLeft:'70px'} : {}} href="#" className="text-sm font-semibold leading-6 text-wright">{intl.get("H2")}</a>
